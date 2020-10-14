@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,35 +13,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW2_1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-YR-82A">
-                                <rect key="frame" x="147" y="75" width="120" height="408"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-YR-82A">
+                                <rect key="frame" x="127.5" y="31" width="120" height="408"/>
                                 <subviews>
                                     <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P12-gG-9A9">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="OYa-3A-wPg"/>
-                                            <constraint firstAttribute="height" constant="120" id="i5K-TT-81v"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rv3-vs-Xya">
                                         <rect key="frame" x="0.0" y="144" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="4Uu-8N-Cqk"/>
-                                            <constraint firstAttribute="width" constant="120" id="G1H-QL-cLe"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtd-iF-aaA">
                                         <rect key="frame" x="0.0" y="288" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="A4a-UX-qXx"/>
-                                            <constraint firstAttribute="height" constant="120" id="At2-wY-MKT"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -50,10 +38,11 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSy-HU-JIm">
-                                <rect key="frame" x="107" y="759" width="200" height="52"/>
+                                <rect key="frame" x="117.5" y="602" width="140" height="33"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="5Fo-ev-67T"/>
+                                    <constraint firstAttribute="height" constant="33" id="kQx-sN-5wD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="wKs-JG-QsN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="START">
@@ -67,15 +56,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="09Z-YR-82A" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="2hC-M4-wrJ"/>
-                            <constraint firstItem="KSy-HU-JIm" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="5uG-3P-gDR"/>
-                            <constraint firstItem="KSy-HU-JIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6hE-Tz-vo5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KSy-HU-JIm" secondAttribute="bottom" constant="32" id="3ax-xM-Kv9"/>
+                            <constraint firstItem="KSy-HU-JIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ln-lf-tqD"/>
                             <constraint firstItem="09Z-YR-82A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="DBA-BA-AB3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="KSy-HU-JIm" secondAttribute="trailing" constant="107" id="EcN-tv-Y2q"/>
-                            <constraint firstItem="KSy-HU-JIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gvp-d6-y1d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KSy-HU-JIm" secondAttribute="bottom" constant="51" id="bZA-5I-qnV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="09Z-YR-82A" secondAttribute="trailing" constant="147" id="qfm-Xe-b9T"/>
-                            <constraint firstItem="09Z-YR-82A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tLt-aL-eO9"/>
+                            <constraint firstItem="09Z-YR-82A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e0g-PT-Pyz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -87,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+            <point key="canvasLocation" x="136.80000000000001" y="87.706146926536732"/>
         </scene>
     </scenes>
     <resources>

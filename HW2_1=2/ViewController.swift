@@ -12,38 +12,37 @@ class ViewController: UIViewController {
     @IBOutlet var redLightView: UIView!
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
+    
     @IBOutlet var changeLightsButtom: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         changeLightsButtom.layer.cornerRadius = 10
-        redLightView.layer.cornerRadius = 60
-        yellowLightView.layer.cornerRadius = 60
-        greenLightView.layer.cornerRadius = 60
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
         redLightView.alpha = 0.3
         yellowLightView.alpha = 0.3
         greenLightView.alpha = 0.3
     }
-    
-    
+
     @IBAction func changeLights() {
+        changeLightsButtom.setTitle("NEXT", for: .normal)
         
         if redLightView.alpha < 1 && yellowLightView.alpha < 1 && greenLightView.alpha <= 1 {
             greenLightView.alpha = 0.3
             redLightView.alpha = 1
-            changeLightsButtom.setTitle("NEXT", for: .normal)
+            
         } else if redLightView.alpha <= 1 && yellowLightView.alpha < 1 && greenLightView.alpha < 1 {
             redLightView.alpha = 0.3
             yellowLightView.alpha = 1
-            changeLightsButtom.setTitle("NEXT", for: .normal)
+            
         } else if redLightView.alpha < 1 && yellowLightView.alpha <= 1 && greenLightView.alpha < 1 {
             yellowLightView.alpha = 0.3
             greenLightView.alpha = 1
-            changeLightsButtom.setTitle("NEXT", for: .normal)
+          
         }
-        
     }
-    
-
 }
 
