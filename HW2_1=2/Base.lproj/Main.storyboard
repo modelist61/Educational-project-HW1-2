@@ -59,6 +59,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="kji-pG-xbl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,7 +79,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="startButtom" destination="KSy-HU-JIm" id="FNq-Bn-Yua"/>
+                        <outlet property="changeLightsButtom" destination="KSy-HU-JIm" id="Weu-mk-cwz"/>
+                        <outlet property="greenLightView" destination="gtd-iF-aaA" id="lbr-cH-qQp"/>
+                        <outlet property="redLightView" destination="P12-gG-9A9" id="kNK-6z-HSM"/>
+                        <outlet property="yellowLightView" destination="Rv3-vs-Xya" id="BGn-NN-Uyx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
